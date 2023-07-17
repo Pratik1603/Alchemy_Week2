@@ -10,6 +10,8 @@ You can run the client from the top-level directory with `node client/index`. Th
 
 Think of the client as the _prover_ here. It needs to prove to the server that some `name` is in the `MERKLE_ROOT` on the server. 
 
+onClient side I have added the proof of the name which the client demands that it is present in the list using Merkle tree  and on server side accepted the request by post method and verify the proof
+
 ## Server
 
 You can run the server from the top-level directory with `node server/index`. This file is an express server which will be hosted on port 1225 and respond to the client's request.
